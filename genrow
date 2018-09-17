@@ -1,0 +1,4 @@
+for f in data/"$1"-*; do
+	cat "$f"|make run|tr '|' ','
+done
+echo
